@@ -1,7 +1,19 @@
 [project]
-name = "funnel-metadynamics"
+name = "funnel"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = []
+authors = [
+    { name = "FNTwin", email = "cris.gabellini@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.hatch.build]
+only-include = ["src"]
+sources = ["src"]
